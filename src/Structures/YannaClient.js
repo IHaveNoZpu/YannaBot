@@ -10,6 +10,7 @@ class YannaClient extends Client {
 		super({
 			intents: [
 				Intents.FLAGS.GUILDS,
+				// "GUILD_MEMBERS", // Do not uncomment this if you uncomment this it will give your error
 				Intents.FLAGS.GUILD_MESSAGES
 			]
 		});

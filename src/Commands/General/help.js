@@ -2,7 +2,7 @@
 const { MessageEmbed } = require("discord.js")
 const path = require("path")
 
-const Command = require(path.join(__dirname, "..", "Structures", "Command.js"))
+const Command = require(path.join(__dirname, "..", "..", "Structures", "Command.js"))
 
 // Class \\
 class Help extends Command {
@@ -39,7 +39,7 @@ class Help extends Command {
 					`**❯ Aliases:** \`${cmd.aliases.length ? cmd.aliases.map(i => `${i}`).join(" ") : "No Aliases"}\``,
 					`**❯ Description:** \`${cmd.description}\``,
 					`**❯ Category:** \`${cmd.category}\``,
-					`**❯ Usage:** \`${cmd.usage}\``
+					`**❯ Usage:** \`.${cmd.name} ${cmd.usage}\``
 					].join("\n"));
 
 			return message.channel.send({ embeds: [embed] })
@@ -52,7 +52,7 @@ class Help extends Command {
 
 			let cates = this.client.utils.removeDup(this.client.commands.map(cmd => cmd.category));
 			if (!this.client.utils.isOwners(message.author.id)) {
-				cates = this.client.utils.removeDup(this.client.commands.filter(cmd => cmd.category !== "Owners").map(cmd => cmd.category));
+				cates = this.client.utils.removeDup(this.client.commands.filter(cmd => cmd.category !== "Owner").map(cmd => cmd.category));
 			}
 
 			for (const cate of cates) {

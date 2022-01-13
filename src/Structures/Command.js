@@ -6,7 +6,7 @@ class Command {
 		this.aliases = opt.aliases || []
 		this.description = opt.description || "Null"
 		this.usage = opt.usage || "Null"
-		this.category = opt.category || "Misc"
+		this.category = opt.category || "Others"
 	}
 
 	async run(message, args) {

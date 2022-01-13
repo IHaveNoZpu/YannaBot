@@ -2,7 +2,7 @@
 const { MessageEmbed } = require("discord.js")
 const path = require("path")
 
-const Command = require(path.join(__dirname, "..", "Structures", "Command.js"))
+const Command = require(path.join(__dirname, "..", "..", "Structures", "Command.js"))
 
 // Class \\
 class Ping extends Command {
