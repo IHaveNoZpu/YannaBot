@@ -1,0 +1,33 @@
+{
+  "name": "@ihavenozpu/yannabot",
+  "version": "1.0.0",
+  "description": "My discord bot for my server",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "nodemon .",
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IHaveNoZpu/YannaBot.git"
+  },
+  "author": "IHaveNoZpu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IHaveNoZpu/YannaBot/issues"
+  },
+  "homepage": "https://github.com/IHaveNoZpu/YannaBot#readme",
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=7.0.0"
+  },
+  "dependencies": {
+    "discord.js": "^13.5.1",
+    "glob": "^7.2.0",
+    "path": "^0.12.7",
+    "util": "^0.12.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
